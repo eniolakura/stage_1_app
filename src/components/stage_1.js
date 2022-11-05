@@ -1,20 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import profile from './profile__img.png';
+import profile from '../images/profile__img.png';
 import slack from '../images/slack.png';
 import github from '../images/github.png';
 import share from '../images/share_button.png'; 
 
 
-function stage_1() {
+function Stage1() {
     return (
       <div>
       <header id='head'>
         {/* <p class='slack_username'>Eniola Kuranga</p> */}
-        <img id='profile__img' src={ profile } />
-        <img />
+        <img id='profile__img' src={ profile } alt='profile-pic' />
         <h2>Eniola Kuranga</h2>
-        <img src={ share } />
+        <img src={ share } alt='share-button'/>
       </header>
       <div className='buttons'>
         <a href='https://twitter.com/bat_syyyy'>
@@ -35,14 +34,17 @@ function stage_1() {
         <a id='book_design' href="https://books.zuri.team/design-rules" alt='design'>
             Design Books
         </a>
+        <button id="contact">
+            <Link to='/contact'>Contact Me</Link>
+        </button>
         <div id='social-icons'>
-          <img src={ slack } id='slack' onClick={""}/>
-          <img src={ github } />
+          <img src={ slack } id='slack' onClick={""} alt='slack'/>
+          <img src={ github } alt='github'/>
         </div>
       </div>
     </div>
     );
   }
   
-  export default stage_1;
+  export default Stage1;
   

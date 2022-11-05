@@ -1,12 +1,12 @@
 import React from "react";
-import stage1 from './stage_1';
+import Stage1 from '../components/stage_1';
 import Footer from './Footer'
 
 const Home = () => {
     return (
         <div>
-            <stage1/>
-            <Footer/>
+            <Stage1 />
+            <Footer />
         </div>
     )
 }

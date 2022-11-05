@@ -16,4 +16,13 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+export function enableButton() {
+  const check = document.getElementById("check");
+  const btn = document.getElementById("btn__submit")
 
+  btn.disabled = "true"
+
+  if (check.checked) {
+      btn.removeAttribute("disabled");
+  }
+}

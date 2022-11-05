@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Contact from './components/Contact'
+import Contact from "./components/Contact";
 import Home from "./components/Home";
-
+import './App.css'
 
 function App(){
   return(
@@ -14,3 +14,5 @@ function App(){
     </>
   )
 }
+
+export default App
